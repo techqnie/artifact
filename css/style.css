@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Varela&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Varela';
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 600px;
+    background: url(../img/back.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 90% ;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+}
+.logo{
+    margin-left: 50px;
+}
+.menu{
+    width: 50%;
+    margin-right: -100px;
+}
+.menu ul{
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+}
+.menu-link{
+    text-decoration-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.start_btn{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10% 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.start_btn:hover{
+    background-color: rgba(0, 106, 255, 0.204);
+   
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: center; 
+}
+.main-text h1{
+    margin: 15px;
+    font-size: 80px;
+}
+.main-text p{
+    font-size: 16px;
+    width: 700px;
+}
+.down_btn{
+    transition: 0.5s;
+}
+.down_btn:hover{
+    stroke: red;fill: red;
+}
+.table{
+   background-color: #f9fafc;
+    height: 100vh;
+    min-height: 600px;
+    padding: 80px;
+}
+.table-header{
+    text-align: center;
+}
+.table-header h2{
+ color: rgb(42, 42, 42);
+ font-size: 50px;
+ margin: 0;
+}
+.table-header p{
+    display: inline-block;
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(113, 113, 113);
+}
+.tarif-plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.tarif{
+    margin-top: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(69, 69, 69, 0.077);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center; 
+    transition: 0.5s;
+}
+.tarif:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 60px 10px rgba(204,204,223,0.71);
+    width: 355px;
+}
+.tarif span{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 25px auto 10px;
+}
+.tarif h4{
+    font-size: 30px;
+    margin: 15px;
+    color: rgb(112, 112, 112);
+}
+.tarif p{
+    color: #9fa4af;
+    font-size: 14px;
+}
+.price-btn{
+    background-color: #fff;
+    border:#9fa4af 1px solid;
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 10px 40px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.price-btn:hover{
+    cursor: pointer;
+    background-color: #6fbff177;
+    border-color: #6fbff177;
+}
+.cta{
+    text-align: center;
+    padding: 140px;
+    position: relative;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+    background-size: cover;
+    color: #fff;
+}
+.cta span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.cta h4{
+    font-weight: 500;
+    font-size: 50px;
+    margin: 10px auto 30px;
+}
+.cta-btn{
+    display: inline-block;
+    background-color: #fff;
+    color: #c2c9db;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px;
+    border-radius: 100px;
+    border: none;
+    transition: 0.3s;
+}
+.cta-btn:hover{
+    background-color: #678886cb;
+    cursor: pointer;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    height: 15vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-menu{
+    width: 40%;
+}
+.footer-menu ul{
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+.footer-menu-link{
+ font-size: 14px;
+ text-decoration: none;
+ color: #6a6a77;
+ font-weight: 500;
+}
+.legal{
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy{
+    font-size: 14px;
+    color: #6a6a77;
+}
+.social-links a{
+    color: #6a6a77;
+    font-size:16px;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+.m-menu-link{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+.m-menu{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: rgb(124, 165, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    transform: translateX(100%);
+}
+.m-menu__active{
+    transform: translateX(0%);
+}
+.close{
+    position: fixed;
+    right: 50px;
+    top: 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+}
+.close:hover{
+    cursor: pointer;
+}
+.menu-link{
+    position: relative;
+    color: #fff;
+}
+.menu-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: #9fa4af;
+    transition: width 0.35s;
+}
+.menu-link:hover::before{
+    width: 100%;
+}
+#section02 a {
+    padding-top: 500px;
+  }
+  #section02 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin: 400px 0 0 -8px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    transition: 100ms;
+  }
+  #section02 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  .down_arrow{
+    margin-top: 230px;
+    height: 10vh;
+  }
+  #section02 a span:hover{
+    border: 4px solid;
+    border-color: rgba(66, 101, 255, 0.707);
+    box-shadow: 0px 0px 25px rgba(66, 101, 255, 0.707);
+  }
+

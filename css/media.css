@@ -1,0 +1,58 @@
+@media (max-width: 1199px){
+    html{
+        font-size: 9px;
+    }
+
+}
+@media(max-width: 991px){
+ html{
+    font-size: 7px;
+ }
+  .visible-lg{
+    display: none;
+  }
+  .m-menu-link{
+    display: block;
+  }
+  .tarif-plan{
+    flex-direction: column;
+  }
+  .tarif{
+    width: 90%;
+    margin: 20px auto;
+  }
+  .tarif:hover{
+    width: 90%;
+  }
+  .table{
+    height: 1500px;
+  }
+  .table-header p{
+    display: contents;
+  }
+  .footer{
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .footer-menu{
+    display: none;
+  }
+  .legal{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .social-links a{
+    font-size: 30px;
+  }
+  .main-text p{
+    width: 500px;
+  }
+  .main-text h1{
+    font-size: 50px;
+  }
+.cta h4{
+  width: 100vw;
+  padding-right: 270px;
+}
+}
