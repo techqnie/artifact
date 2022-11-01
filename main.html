@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Artifact</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+            <img src="img/logo (2).png" alt="logo">
+            </div>
+            <a href="#" class="m-menu-link">
+            <i class="fa fa-bars"></i>
+            </a>
+            <ul class="m-menu">
+                <div class="close">&times;</div>
+                <li><a href="#" class="menu-link">HOME</a></li>
+                <li><a href="#section03" class="menu-link">FEATURES</a></li>
+                <li><a href="#section04" class="menu-link">ABOUT</a></li>
+                <li><a href="#section03" class="start_btn">START</a></li>
+            </ul>
+            <div class="menu visible-lg">
+                <ul>
+                    <li><a href="#" class="menu-link">HOME</a></li>
+                    <li><a href="#section03" class="menu-link">FEATURES</a></li>
+                    <li><a href="#section04" class="menu-link">ABOUT</a></li>
+                    <li><a href="#section03" class="start_btn">START</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-text">
+            <h1>Crypto Analytics</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati, mollitia sequi temporibus at a minus inventore velit eaque consequatur.</p> 
+            <div class="down_arrow">
+            <section id="section02" class="slct">
+                <a href="#section03"><span></span></a>
+              </section>
+            </div>  
+           </div>
+    </div>
+    <section id="section03">
+    <div class="table">
+        <div class="table-header">
+            <h2>Select a Plan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Necessitatibus, tempora.</p>
+        </div>
+        <div class="tarif-plan">
+            <div class="tarif">
+                <img src="img/eco_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                <span>Free</span>
+                <h4>0$</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla. Voluptate officia quidem ipsum nisi eveniet corporis saepe aliquam eligendi quia voluptatum quam minima, similique a libero consectetur qui nam!</p>
+                <button class="price-btn">select plan</button>
+            </div>
+            <div class="tarif">
+                <img src="img/rocket_launch_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <span>Middle</span>
+                <h4>24$</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla. Voluptate officia quidem ipsum nisi eveniet corporis saepe aliquam eligendi quia voluptatum quam minima, similique a libero consectetur qui nam!</p>
+                <button class="price-btn">select plan</button>
+            </div>
+            <div class="tarif">
+                <img src="img/diamond_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <span>Pro</span>
+                <h4>50$</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla. Voluptate officia quidem ipsum nisi eveniet corporis saepe aliquam eligendi quia voluptatum quam minima, similique a libero consectetur qui nam!</p>
+                <button class="price-btn">select plan</button>
+            </div>
+        </div>
+    </div>
+</section>\
+<section id="section04">
+    <div class="cta">
+        <span>crypto analytics community</span>
+        <h4>What is the future?</h4>
+        <button class="cta-btn">get started</button>
+        <button class="cta-btn">analytics</button>
+    </div>
+</section>
+<section id="section05">
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="logo">
+                <img src="img/Новый проект (3).png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#" class="footer-menu-link">FEEDBACK</a></li>
+                    <li><a href="#" class="footer-menu-link">CONTACT</a></li>
+                    <li><a href="#" class="footer-menu-link">RATING</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="legal">
+        <div class="copy">
+            <p>© 2022 Artifact Karpenko R.</p>
+        </div>
+        <div class="social-links">
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+</section>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+       $(function(){
+        var link = $('.m-menu-link');
+        var close = $('.close');
+        var menu = $('.m-menu');
+        link.on('click', function(event) {
+          event.preventDefault();
+          menu.toggleClass('m-menu__active');
+        })
+        close.on('click', function(event){
+          event.preventDefault();
+          menu.toggleClass('m-menu__active');
+        })
+       })
+       $('a[href*="#"]').on('click', function (e) {
+  e.preventDefault();
+ 
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 450, 'linear');
+});
+    </script>
+</body>
+</html>
