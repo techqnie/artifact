@@ -76,6 +76,6 @@
 .tarif:hover{
   cursor: pointer;
   box-shadow: 0px 0px 60px 10px rgba(204,204,223,0.71);
-  width: 355px;
+  width: 103%;
 }
 }
