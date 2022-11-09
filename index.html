@@ -14,7 +14,7 @@
     <div class="main">
         <div class="header">
             <div class="logo">
-            <img src="img/logo (2).png" alt="logo">
+            <img src="img/logo (2).png" alt="logo" class="logo_img">
             </div>
             <a href="#" class="m-menu-link">
             <i class="fa fa-bars"></i>
@@ -78,7 +78,7 @@
 </section>\
 <section id="section04">
     <div class="cta">
-        <span>crypto analytics community</span>
+        <span class="upper_case">crypto analytics community</span>
         <h4>What is the future?</h4>
         <button class="cta-btn">get started</button>
         <button class="cta-btn">analytics</button>
@@ -113,7 +113,7 @@
 </section>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
-       $(function(){
+        $(function(){
         var link = $('.m-menu-link');
         var close = $('.close');
         var menu = $('.m-menu');
@@ -124,15 +124,10 @@
         close.on('click', function(event){
           event.preventDefault();
           menu.toggleClass('m-menu__active');
+          menu.toggleClass('m-menu-link')
         })
        })
-       $('a[href*="#"]').on('click', function (e) {
-  e.preventDefault();
- 
-  $('html, body').animate({
-    scrollTop: $($(this).attr('href')).offset().top
-  }, 450, 'linear');
-});
+
     </script>
 </body>
 </html>
