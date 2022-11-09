@@ -20,9 +20,6 @@
   .tarif{
     width: 100%;
   }
-  .tarif:hover{
-    width: 98%;
-  }
   .table{
     height: 100%;
     width: 100%;
@@ -75,5 +72,10 @@
 }
 .cta-btn{
   font-size: 14px;
+}
+.tarif:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 60px 10px rgba(204,204,223,0.71);
+  width: 355px;
 }
 }
